@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json'); // Asegura que el contenido siempre sea JSON
 
-$servername = "hautorack.proxy.rlwy.net";
+$servername = "autorack.proxy.rlwy.net";
 $username = "root"; 
 $password = "AzeHXksbCQmsHbSSZHqgvxaNvKYWKWVX"; 
 $dbname = "railway";
