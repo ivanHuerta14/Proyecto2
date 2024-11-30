@@ -1,10 +1,10 @@
 <?php
 header('Content-Type: application/json'); // Asegura que el contenido siempre sea JSON
 
-$servername = "localhost";
+$servername = "hautorack.proxy.rlwy.net";
 $username = "root"; 
-$password = ""; 
-$dbname = "registros_db";
+$password = "AzeHXksbCQmsHbSSZHqgvxaNvKYWKWVX"; 
+$dbname = "railway";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
