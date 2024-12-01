@@ -20,5 +20,3 @@ try {
     exit(); // Termina la ejecución si falla la conexión
 }
 ?>
-autorack.proxy.rlwy.net:37324
-mysql.railway.internal
