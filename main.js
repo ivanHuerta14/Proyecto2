@@ -5,7 +5,7 @@ let sortOrder = 'ASC';
 
 function loadTableData() {
     searchQuery = $('#searchInput').val() || '';
-    const url = `https://proyecto2-production-80d3.up.railway.app/api.php?action=read&search=${searchQuery}`;
+    const url = `https://proyecto2-production-80d3.up.railway.app/api.php?action=read&search=${searchQuery}&column=${sortColumn}&order=${sortOrder}&page=${currentPage}`;
     $.ajax({
        // url: `api.php?action=read&search=${searchQuery}&column=${sortColumn}&order=${sortOrder}&page=${currentPage}`,
         url: url,
