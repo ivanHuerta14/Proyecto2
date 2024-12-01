@@ -13,7 +13,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Mensaje de éxito
-    echo json_encode(['success' => 'Conexión exitosa a la base de datos']);
+   // echo json_encode(['success' => 'Conexión exitosa a la base de datos']);
 } catch (PDOException $e) {
     // En caso de error, devolver JSON con mensaje de error
     echo json_encode(['error' => 'Error de conexión: ' . $e->getMessage()]);
