@@ -1,11 +1,11 @@
 <?php
 header('Content-Type: application/json'); // Asegura que el contenido siempre sea JSON
 
-$servername = "mysql.railway.internal"; // Host proporcionado por Railway
-$username = "root";                       // Usuario de la base de datos
-$password = "AzeHXksbCQmsHbSSZHqgvxaNvKYWKWVX"; // Contraseña de la base de datos
-$dbname = "railway";                      // Nombre de la base de datos
-$port = 3306;                            // Puerto proporcionado por Railway
+$servername = getenv('DB_HOST');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASSWORD');
+$dbname = getenv('DB_NAME');
+$port = getenv('DB_PORT');
 
 try {
     // Establecer conexión con PDO incluyendo el puerto
