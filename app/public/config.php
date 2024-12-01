@@ -1,11 +1,11 @@
 <?php
 header('Content-Type: application/json'); // Asegura que el contenido siempre sea JSON
 
-$servername = "autorack.proxy.rlwy.net"; // Host proporcionado por Railway
-$username = "root";                       // Usuario de la base de datos
-$password = "AzeHXksbCQmsHbSSZHqgvxaNvKYWKWVX"; // Contraseña de la base de datos
-$dbname = "railway";                      // Nombre de la base de datos
-$port = 37324;                            // Puerto proporcionado por Railway
+$servername ="mysql.railway.internal"; // Host proporcionado por Railway
+$username ="root";                       // Usuario de la base de datos
+$password ="AzeHXksbCQmsHbSSZHqgvxaNvKYWKWVX"; // Contraseña de la base de datos
+$dbname ="railway";                      // Nombre de la base de datos
+$port =3306;                            // Puerto proporcionado por Railway
 
 try {
     // Establecer conexión con PDO incluyendo el puerto
