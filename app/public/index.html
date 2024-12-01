@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Registros</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Incluir jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="loadTableData();">
+    <h1>Desarrollo para Front end</h1>
+    <h2>3.3. AJAX</h2>
+    <h2>Maestro:MENDOZA ALVAREZ, CARLOS ALEJANDRO </h2>
+    <h2>Alumno: Christian Ivan Huerta Martínez</h2>
+    <h1>Tabla de Registros</h1>
+
+    <input type="text" id="searchInput" placeholder="Buscar registros..." oninput="loadTableData()">
+    <button onclick="addRecord()">Agregar Registro</button>
+
+    <div class="container">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable('nombre')">Nombre</th>
+                    <th onclick="sortTable('valor')">Valor</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div class="pagination">
+        <a href="#" onclick="prevPage()">Anterior</a>
+        <a href="#" onclick="nextPage()">Siguiente</a>
+    </div>
+
+    <!-- Incluir main.js después de jQuery -->
+    <script src="main.js"></script>
+</body>
+</html>
